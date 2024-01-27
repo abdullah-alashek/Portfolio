@@ -1,5 +1,5 @@
 import React from 'react'
-import './contact.css'
+import './Contact.css'
 import { FaSquarePhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
