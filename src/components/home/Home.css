@@ -1,0 +1,241 @@
+.homepage, #tsparticles{
+    width: 100%;
+    height: 100vh;
+    z-index: -11;
+  }
+
+  .homepage .container{
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: 100%;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+
+  }
+  .homepage .container .content{
+    width:50%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .homepage .container .content .title{
+    width: 95%;
+    margin: 10px auto;
+    
+  }
+  .homepage .container .content h1{
+    font-family: "Roboto", sans-serif;
+    margin: 0px auto;
+    width: 420px;
+    margin-top: 10px;
+    text-align: start;
+    font-size: 35px;
+    
+  }
+  .homepage .container .content h1 span {
+    color: #64CCC5;
+    width: max-content ;  
+  
+
+  }
+  .homepage .container .content p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #efefef;
+    letter-spacing: 1px;
+    margin: 20px;
+    font-size: 13px;
+    line-height: 20px;
+
+  }
+  .homepage .container .image{
+    width: 100%;
+  }
+  .homepage .container .image img{
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 50%;    
+    border: 8px double #64CCC5;
+  }
+  .homepage .container .content .btn{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin: 10px auto;
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .homepage .container .content a button{
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px double #64CCC5;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    color: #efefef;
+  }
+  .homepage .container .content .btn-cont button{
+    background-color: #00152400 ;
+    color: #efefef;
+    font-weight: bold;
+  }
+  .homepage .container .content a button:hover{
+    background-color: #001524;
+  }
+ 
+
+  :root {
+    --borderColor: #03A9F3;
+}
+
+.homepage .container .content a button {
+    position: relative;
+    border: 1px solid #03A9F3;
+    
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        transition: .4s ease-in-out;
+    }
+    
+    &::before {
+        top: -5px;
+        left: -5px;
+        border-top: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+    }
+    
+    &::after {
+        right: -5px;
+        bottom: -5px;
+        border-bottom: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+    }
+    
+    &:hover::before,
+    &:hover::after {
+        width: calc(100% + 9px);
+        height: calc(100% + 9px);
+    }
+}
+
+
+@media (max-width:800px){
+  .homepage .container .content{
+    width: 75%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .homepage .container .content .title{
+    width: 95%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .homepage .container .content h1{
+    font-size: 22px;
+    width:  270px;
+    margin: 0 auto;
+    text-align: start;
+    
+  }
+  .homepage .container .content h1 span{
+    width: max-content ;    
+  }
+
+  .homepage .container .content p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #efefef;
+    letter-spacing: 1px;
+    margin: 20px 0px;
+    font-size: 13px;
+    line-height: 20px;
+    
+
+  }
+  .homepage .container .image{
+    width: 100%;
+  }
+  .homepage .container .image img{
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    border-radius: 50%;    
+    border: 8px double #64CCC5;
+  }
+  .homepage .container .content .btn{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin: 10px auto;
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .homepage .container .content a button{
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px double #64CCC5;
+    font-size: 18px;
+    padding: 10px 20px;
+
+  }
+}
+@media (max-width:560px){
+  .homepage .container .content{
+    width: 75%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .homepage .container .content .title{
+    width: 95%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .homepage .container .content h1{
+    font-size: 22px;
+    width:  270px;
+    margin: 0 auto;
+    text-align: start;
+    
+  }
+  .homepage .container .content h1 span{
+    width: max-content ;    
+  }
+
+  .homepage .container .content p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #efefef;
+    letter-spacing: 1px;
+    margin: 20px 0px;
+    font-size: 13px;
+    line-height: 20px;
+    
+
+  }
+  .homepage .container .image{
+    width: 100%;
+  }
+  .homepage .container .image img{
+    width: 150px;
+    height: 150px;
+  }
+  .homepage .container .content .btn{
+    gap: 20px;
+  }
+  
+  .homepage .container .content a button{
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px double #64CCC5;
+    font-size: 18px;
+    padding: 10px 20px;
+
+  }
+}

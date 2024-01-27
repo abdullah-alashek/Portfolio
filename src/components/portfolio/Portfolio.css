@@ -1,0 +1,141 @@
+.portfolio-page {
+    background-color: #001C30;
+    width: 100%;
+    padding: 50px 100px;
+    /* 001C30 */
+    color: black;
+}
+.portfolio-page .title{
+    margin-bottom: 50px;
+    color: #64CCC5;
+    /* 001C30 */
+}
+.portfolio-page .container{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-page .container .card{
+    position: relative;
+    width: 32% !important;
+    margin-bottom: 10px;
+    overflow: hidden; /* to clip the image that exceeds the container */
+    transition: all 1s;
+    border-radius: 10px;
+  }
+  .portfolio-page .container .card{
+    border: none;  
+    box-shadow: 1px 1px 2px 1px #64ccc522;
+    transition: all 0.5s;
+  }
+  
+  .portfolio-page .container .card .nn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000c0;
+    font-size: 32px;
+    opacity: 0;
+    z-index: 6;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+    padding: 20px;
+  }
+  .portfolio-page .container .card .nn a button{
+    transition: all 0.5s;
+    background-color: #64CCC5;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .portfolio-page .container .card .nn a button:hover{
+    background-color: #efefef;
+
+  }
+  .portfolio-page .container .card .nn a{
+    color: #001C30;
+    text-decoration: none;
+    font-size: 14px;
+    
+  }
+  .portfolio-page .container .card img{
+    overflow: clip;
+    transition: all 1s;
+    object-fit: cover;
+    width: 100%;
+    margin: 0px;
+  }
+  .portfolio-page .container .card:hover img{
+    overflow: clip;
+    transform: scale(1.1);
+  }  
+  .portfolio-page .container .card .nn:hover{
+    opacity: 1;
+  
+  } 
+
+  @media (max-width:1020px){
+    .portfolio-page .container{
+    width: 80vw;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-page .container .card{
+    position: relative;
+    width: 300px !important;
+    margin-bottom: 10px;
+    overflow: hidden; /* to clip the image that exceeds the container */
+    transition: all 1s;
+    border-radius: 10px;
+  }
+
+  
+}
+  @media (max-width:560px){
+    .portfolio-page {
+      background-color: #001C30;
+      width: 100%;
+      padding: 50px 10px;
+      /* 001C30 */
+      color: black;
+  }
+    .portfolio-page .container{
+    width: 100vw;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-page .container .card{
+    position: relative;
+    width: 300px !important;
+    margin-bottom: 10px;
+    overflow: hidden; /* to clip the image that exceeds the container */
+    transition: all 1s;
+    border-radius: 10px;
+  }
+
+  
+}
