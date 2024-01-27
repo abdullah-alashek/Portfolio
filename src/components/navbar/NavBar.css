@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Great+Vibes&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Great+Vibes&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.navbar{
+    background-color: #001524;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+    position: fixed;
+    width: 100vw;
+    z-index: 9;
+}
+.navbar .menu ul{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.navbar .menu ul li{
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    
+}
+.navbar .menu ul li:hover{
+    color: #64CCC5 ;
+}
+
+.half-color {
+	position:relative;
+	display:inline-block;
+ 	color:#fff;
+    font-size: 1.9rem;
+    font-family: "Great Vibes", cursive;
+    letter-spacing: 3px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 4px;
+    transition: all 0.25s ease-in-out;
+}
+.half-color:before{
+	content: attr(attribute);
+	color:#64CCC5;
+	position:absolute;
+	top:0;
+	left:0;
+	height:40%;
+	overflow:hidden;
+}
+
+@media (max-width:800px){
+    .navbar{
+        padding: 20px 20px;
+        font-size: 1rem;
+    }
+    .navbar .menu ul{
+        gap: 1.2rem;
+    }
+    .half-color {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        font-weight: 400;
+    }
+    .half-color:before{
+        content: attr(attribute);
+        color:#64CCC5;
+        position:absolute;
+        top:0;
+        left:0;
+        height:40%;
+        overflow:hidden;
+    }
+    
+}
+@media (max-width:560px){
+    .navbar{
+        padding: 20px 20px;
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navbar .menu ul{
+        gap: 1.2rem;
+    }
+    .half-color {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        font-weight: 400;
+    }
+    .half-color:before{
+        content: attr(attribute);
+        color:#64CCC5;
+        position:absolute;
+        top:0;
+        left:0;
+        height:40%;
+        overflow:hidden;
+    }
+    
+}
