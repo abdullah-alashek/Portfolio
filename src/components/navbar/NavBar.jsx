@@ -4,7 +4,7 @@ import Home from './../home/Home'
 import About from './../about/About'
 import Portfolio from './../portfolio/Portfolio'
 import { Link } from 'react-scroll'
-import Contact from './../contact/contact'
+import Contact from './../contact/Contact.jsx'
 const NavBar = () => {
   return (
     <>
