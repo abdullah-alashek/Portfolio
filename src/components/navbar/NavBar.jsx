@@ -1,10 +1,10 @@
 import React from 'react'
 import "./NavBar.css"
-import Home from '../home/Home'
-import About from '../about/About'
-import Portfolio from '../portfolio/Portfolio'
+import Home from './../home/Home'
+import About from './../about/About'
+import Portfolio from './../portfolio/Portfolio'
 import { Link } from 'react-scroll'
-import Contact from '../contact/contact'
+import Contact from './../contact/contact'
 const NavBar = () => {
   return (
     <>

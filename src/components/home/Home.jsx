@@ -1,6 +1,6 @@
 import React  from 'react'
 import './Home.css'
-import BackParticles from '../../assets/const/BackParticles'
+import BackParticles from './../../assets/const/BackParticles'
 import myPic from './../../assets/images/my.png'
 import { TypeAnimation } from 'react-type-animation'
 import { Link } from 'react-scroll'
