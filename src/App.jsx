@@ -2,7 +2,7 @@
 import './App.css'
 import React from 'react'
 // import Home from './components/home/Home'
-// import NavBar from './components/navbar/NavBar'
+import NavBar from './components/navbar/NavBar'
 // import About from './components/about/About'
 // import Portfolio from './components/portfolio/Portfolio'
 // import Contact from './components/contact/contact'
@@ -18,7 +18,7 @@ function App() {
   // },[])
   return (
     <>
-      {/* < NavBar /> */}
+      < NavBar />
       < Footer/>
     </>
   )
