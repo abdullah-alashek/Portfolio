@@ -13,9 +13,9 @@ import Footer from './components/footer/Footer'
 // import scrollElement from 'react-scroll/modules/mixins/scroll-element'
 
 function App() {
-  useEffect(()=>{
-    Aos.init()
-  },[])
+  // useEffect(()=>{
+  //   Aos.init()
+  // },[])
   return (
     <>
       {/* < NavBar /> */}
