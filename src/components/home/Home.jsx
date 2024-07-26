@@ -49,7 +49,7 @@ const Home = ({id}) => {
                       duration={500}>
                         <a className="btn-cont"><button>Contact with me</button></a>
                     </Link>
-                <a className="btn-down"target="_blank" href="https://drive.google.com/file/d/1LIho7M1CJ9J9UsZJtfFXfpZBPlxLHbZn/view?usp=sharing"><button>Download CV</button></a>
+                <a className="btn-down"target="_blank" href="https://drive.google.com/file/d/1nSuspSGq-AsziXx-qe5UIEPbUAtuLkfg/view?usp=sharing"><button>Download CV</button></a>
 {/*                 <a className="btn-down"target="_blank" href="https://drive.google.com/file/d/1pDprEISBvdylYqJvYZFpIH8Zdt9ugVdN/view?usp=sharing"><button>Download CV</button></a> */}
               </div>
         </div>
